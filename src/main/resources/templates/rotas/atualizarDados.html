@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/styles/tela-de-update.css">
+  <link rel="stylesheet" href="../src/styles/var.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Handjet:wght@500&family=Orbitron&display=swap"
+    rel="stylesheet">
+  <title>Rede Social Fictícia</title>
+</head>
+
+<body>
+
+  <header class="top-header">
+    <h1>Rede Social Fictícia</h1>
+    <div>
+      <h3>Seja Bem-Vindo, <span id="nomeUsuario"></span></h3>
+      <a href="tela-inicial.html">Voltar</a>
+    </div>
+
+  </header>
+
+  <main class="main-content">
+
+    <section class="box-atualizar">
+      <h1>Atualize os seus dados</h1>
+      <form>
+        <label for="nome">Nome:
+          <input type="text" id="nome-update" name="nome" required placeholder="Insira seu nome">
+        </label>
+
+        <label for="senha">Nova senha:
+          <input type="password" id="novaSenha-update" name="senha" required placeholder="Insira sua senha">
+        </label>
+        <label for="senha">Repita a nova senha:
+          <input type="password" id="RepitaNovaSenha-update" name="senha" required placeholder="Insira sua senha">
+          
+        <span class="error-message" id="error-message-update"></span>
+        </label>
+        <button type="submit" id="update-js">Atualizar dados</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <button id="logar-js" hidden>Logar</button>
+  <script src="../js/script_update.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/tela-de-posts.css">
+    <link rel="stylesheet" href="../src/styles/var.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Handjet:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+    <title>Rede Social Fictícia</title>
+</head>
+<body>
+
+    <header class="top-header">
+        <h1>Rede Social Fictícia</h1>
+        <div>
+            <h3>Seja Bem-Vindo, <span id="nomeUsuario"></span></h3>
+            <a id="sair-link" href="../index.html">Sair</a>
+            
+        </div>
+      
+    </header>
+    
+    <header class="main-header">
+    
+        <main class="main-header-user">
+            <img src="../src/img/user.png">
+            <a href="atualizarDados.html">Atualizar meus dados</a>
+        </main>
+    
+        <main class="main-header-post">
+            <form>
+                <label for="titulo">Título do Post:
+                    <input type="text" id="tituloInput" name="titulo" required placeholder="Insira o título do post">
+                </label>
+                <label for="postagem">Postagem:
+                    <textarea name="postagem" id="postagemInput" cols="30" rows="5" maxlength="150" required placeholder="Insira sua postagem"></textarea>
+                    <span class="error-message" id="error-message-update"></span>
+                </label>
+                <button type="button" id="postar-js">Postar</button>
+            </form>
+        </main>
+    
+        <footer>
+            <p class="footer-text">Desenvolvido por Kauan Lima</p>
+        </footer>
+    
+    </header>
+    
+    <main class="main-content">
+        <section class="main-content__busca">
+            <div class="search-bar">
+                <input type="text" placeholder="Insira sua busca" id="pesquisaPostInput">
+                <button type="button" id="postButton">Buscar Post</button>
+            </div>
+        </section>
+    
+        <p>Todos os posts:</p>
+        <div id="postContainer" class="gray-boxes"> </div>
+    </main>
+    
+    <button id="logar-js" hidden>Logar</button>
+    <script src="../js/script_posts.js"></script>
+    
+</body>
+
+</html>

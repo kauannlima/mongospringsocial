@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    align-items: start;
+}
+
+input,
+textarea {
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #CCCCCC;
+}
+
+textarea {
+    height: auto;
+    resize: none;
+}
+
+button {
+    padding: 5px;
+    width: 125px;
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: var(--blueColor);
+    font-weight: bolder;
+    color: white;
+    border: none;
+    border-bottom: 1em ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--blueColor);
+}
+
+.top-header {
+    background: var(--blueGradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .6em 1.5em;
+}
+.top-header div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.top-header a{
+    color: white;
+}
+
+.main-header {
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    padding: 1.7em 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.main-header-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-header-user img {
+    max-width: 20%;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.main-header-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+.charCountDiv{
+    display: flex;
+    align-items: end;
+    text-align: end;
+}
+
+.main-content {
+    
+    width: 70%;
+    margin-left: 30%;
+    padding: 45px 35px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    height: 100%;
+    border-left: 3px solid #CCCCCC;
+
+}
+
+.main-content__busca {
+    margin-bottom: 5em;
+}
+
+.postDiv {
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    padding: 1em .7em;
+    font-size: 14px;
+}
+.author-info{
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5em;
+    padding: .7em .3em;
+}
+.author-info img{
+width: 1em;
+}
+
+.post-info{
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+.comments-info{
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    border: 2px solid #CCCCCC;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: .7em .3em;
+}
+.comment{
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    flex-direction: column;
+    margin-bottom: .5em;
+    padding: .7em .3em;
+}
+.comment .author{
+font-weight: bolder;
+}
+.comment img{
+    width: 1em;
+}
+
+.error-message {
+    font-size: 13px;
+    height: 40px;
+    overflow: hidden;
+    color: var(--errorColor);
+    font-weight: bolder;
+}
+
+.sucesso {
+    color: var(--blueColor);
+}
+
+@media screen and (max-width: 920px) {
+    .top-header {
+        font-size: .7em;
+    }
+
+    .main-header {
+        position:static;
+        padding: 2em 1.5em;
+        text-align: center;
+        margin: 0 auto ;
+    width: 100%;
+    }
+    
+    
+    .main-header-user img {
+        max-width: 20%;
+        border: 2px solid #CCCCCC;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+    
+    .main-header-post {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 18px;
+    }
+    
+    
+    .main-content {
+  
+        margin: 0 auto ;
+        width: 100%;
+        position:static;
+        padding: 45px 35px;
+        box-sizing: border-box;
+        background-color: #F2F2F2;
+        height: 100%;
+        border-top: 3px solid #CCCCCC;
+    
+}
+
+.main-content__busca{
+    text-align: center;
+}
+
+}
