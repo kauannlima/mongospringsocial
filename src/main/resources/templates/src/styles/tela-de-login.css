@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F0F2F5;
 }
 
 /*TELA INICIAL DE LOGIN E CADASTRO*/
@@ -20,24 +21,33 @@ body {
     flex-direction: column;
 }
 .box {
+    background-color: white;
     text-align: center;
     width: 70%;
-    padding: 25px 20px;
+    padding: 30px 20px;
     border: var(--succesColor) 2px solid;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-}
+    border: 2px solid #F0F2F5;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Add the shadow here */
+  }
+  
+  p{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
 
 .box-login {
-    margin-top: 30px;
-    background: var(--blueGradient);
-    color: white;
+    margin-top: 35px;
     border-bottom: none;
     border-radius: 10px 10px 0 0;
 }
 
 .box-register {
+    border-top: none;
     border-radius: 0 0 10px 10px;
 }
 
@@ -49,20 +59,24 @@ input {
     border: none;
     outline: none;
     padding: 5px;
-    width: 230px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: white;
+    border: 2px solid #F0F2F5;
 }
 
-.box-register input {
-    border: 1.5px solid var(--blueColor);
-}
+input[value]:not([type="radio"]):not([type="checkbox"]) {
+    color: #333; /* Your desired text color */
+  }
 
-input:focus {
-    background-color: white;
-}
+.box input:hover, .box input:focus {
+    border: 1px #0866FF solid;
+    box-shadow: 0 0 3px #0866FF; /* Adiciona uma sombra de caixa azul */
+    transition: box-shadow 0.3s ease-in-out; /* Transição suave */
+  }
+  
+
 
 form {
     display: flex;
@@ -82,34 +96,32 @@ label input {
 }
 
 button {
-    margin: 15px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-}
-
-.box-register button {
-    background: var(--blueGradient);
+    font-size: 20px;
+    width: 300px;
+    background: #0866FF;
     transition: background 0.3s ease-in-out;
     color: white;
 }
 
-.box-register button:hover {
-    background: linear-gradient(160deg, #007bb5 0%, #4fc3f7 100%);
+
+.box button:hover {
+    background: #1976F2
 }
 
 .error-message {
     font-size: 13px;
     height: 20px;
     overflow: hidden;
-    color: var(--errorColor);
+    color: red;
     font-weight: bolder;
 }
 
 .sucesso {
-    color: var(--blueColor);
+    color: #0866FF;
 }
 
 a {
@@ -122,41 +134,6 @@ a {
     bottom: 0;
 }
 
-a:hover {
-    color: linear-gradient(160deg, #007bb5 0%, #4fc3f7 100%);
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    padding: 25px 15px;
-    width: 80%;
-    margin: 20px auto;
-}
-
-.footer-link {
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer-link:hover {
-    color: var(--blueColor);
-}
-
-
-/*RECUPERAR LOGIN*/
-.box-atualizar {
-    margin: 150px auto;
-    background: var(--blueGradient);
-    color: white;
-    border-bottom: none;
-    border-radius: 10px;
-}
 
 @media screen and (min-width: 850px) {
 
@@ -166,25 +143,23 @@ a:hover {
 
     .box {
         margin-top: 100px;
-        min-height: 400px;
+        min-height: 450px;
         max-height: 400px;
         text-align: center;
         width: 400px;
-        padding: 25px 20px;
-        border: var(--blueColor) 2px solid;
+        border: 2px solid #F0F2F5;
+        box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2); /* Add the shadow here */
+
     }
-
-
 
     .box-login {
-        border-radius: 10px 0 0 10px;
         border-right: none;
+        border-radius: 10px 0 0 10px;
     }
-
+    
     .box-register {
+        border-left: none;
         border-radius: 0 10px 10px 0;
     }
-
-
     
 }

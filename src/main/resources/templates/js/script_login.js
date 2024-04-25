@@ -33,7 +33,7 @@ function login() {
                 // Salva o email no armazenamento local
                 localStorage.setItem('email', dataLogin.email);
 
-                window.location.href = 'rotas/tela-inicial.html'; 
+                window.location.href = 'rotas/tela-posts.html'; 
             }
         })
         .catch(error => {
