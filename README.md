@@ -1,5 +1,6 @@
-
 # MongoSpringSocial
+
+O MongoSpringSocial é uma aplicação de rede social básica desenvolvida com o Spring Boot e MongoDB. Permite aos usuários realizar operações comuns de uma rede social, como criar sua conta e realizar login, criar postagens e visualizar o feed de postagens.
 
 ## Tecnologias Utilizadas
 
